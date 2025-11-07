@@ -1,0 +1,5 @@
+<p>SARI ÇİÇEK MAGAZİNE</p>
+<div class="img">
+  <img [src]="this.magazines()[0].images[0]" width="1772" height="1181">
+  <a (click)="addProduct()">Kaufen {{this.magazines()[0].price.unit_amount / 100}} CHF</a>
+</div>

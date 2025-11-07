@@ -1,0 +1,22 @@
+<div class="foto">
+  <p>SARI ÇİÇEK PRODUCTİONS</p>
+  <p>Fotografie</p>
+  <div class="pics">
+    @if(showMore){
+      @for (pic of pics; track pics){
+        <img ngSrc="assets/Media/{{pic}}" alt="film {{pic}} img" height="128" width="192" priority>
+      }
+      <p>
+      <a (click)="toggleShowMore()">Show Less</a>
+      </p>
+    }
+    @else {
+      <img ngSrc="assets/Media/1.jpg" alt="film 1 img" height="128" width="192" priority>
+      <img ngSrc="assets/Media/2.jpg" alt="film 1 img" height="128" width="192" priority>
+      <img ngSrc="assets/Media/3.jpg" alt="film 1 img" height="128" width="192" priority>
+      <p>
+      <a (click)="toggleShowMore()">Show More</a>
+      </p>
+    }
+  </div>
+</div>

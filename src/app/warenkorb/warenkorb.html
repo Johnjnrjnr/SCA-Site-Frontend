@@ -1,0 +1,33 @@
+<div class="warenkorb">
+  @for (product of this.warenkorbService.current(); track product) {
+    <table class="item">
+      <tr>
+        <td>
+          <img [src]="product.product.images[0]" width="200px" height="auto">
+        </td>
+        <td>
+          <h1>{{product.product.name}}</h1>
+        </td>
+        <td>
+          @if(product.product.productMetadata["size"]){
+            <h2>{{product.product.productMetadata["size"]}}</h2>
+          }
+        </td>
+        <td>
+          <h2>{{product.product.description}}</h2>
+        </td>
+        <td>
+          <h2>{{product.product.price.unit_amount/100}} CHF</h2>
+          <a (click)="this.warenkorbService.removeProduct(product.id)" class="remove">Entfernen</a>
+        </td>
+      </tr>
+    </table>
+  }
+  @if (this.warenkorbService.total() != 0)
+  {
+    <div class="total">
+      <h1>Total: {{this.warenkorbService.total()}} CHF</h1>
+      <a (click)="this.warenkorbService.startPurchase()">Zahlen</a>
+    </div>
+  }
+</div>

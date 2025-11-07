@@ -1,0 +1,26 @@
+img {
+  width: 30%;
+  height: auto;
+  margin: 1%;
+  border: 3px solid;
+}
+
+a {
+  color: black;
+  border: solid 1.5px black;
+  border-radius: 30px;
+  padding: 5px;
+  text-decoration: none;
+  max-width: 20%;
+
+}
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

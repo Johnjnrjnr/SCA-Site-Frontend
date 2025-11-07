@@ -1,0 +1,16 @@
+.creative{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 25px;
+}
+.desc {
+  width:90%;
+  margin-bottom: 100px;
+}
+
+app-wear{
+  width: 100%;
+}

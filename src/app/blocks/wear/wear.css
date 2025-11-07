@@ -1,0 +1,40 @@
+img {
+  max-width: 15vw;
+}
+
+.wear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 45vw;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1vw;
+}
+
+
+a {
+  color: black;
+  border: solid 1.5px black;
+  border-radius: 30px;
+  padding: 5px;
+  text-decoration: none;
+  max-width: 20%;
+
+}
+a:hover {
+  cursor: pointer;
+}
+
+.buybutton {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
