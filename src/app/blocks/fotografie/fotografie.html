@@ -1,6 +1,6 @@
 <div class="foto">
-  <p>SARI ÇİÇEK PRODUCTİONS</p>
-  <p>Fotografie</p>
+  <p class="title">SARI ÇİÇEK PRODUCTİONS</p>
+  <p class="title cursive">Fotografie</p>
   <div class="pics">
     @if(showMore){
       @for (pic of pics; track pics){
@@ -15,7 +15,7 @@
       <img ngSrc="assets/Media/2.jpg" alt="film 1 img" height="128" width="192" priority>
       <img ngSrc="assets/Media/3.jpg" alt="film 1 img" height="128" width="192" priority>
       <p>
-      <a (click)="toggleShowMore()">Show More</a>
+      <a (click)="toggleShowMore()" id="showMore">Show More</a>
       </p>
     }
   </div>

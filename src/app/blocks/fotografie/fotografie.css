@@ -1,3 +1,7 @@
+.foto{
+  margin-bottom: 100px;
+}
+
 img {
   width: 30%;
   height: auto;
@@ -5,15 +9,17 @@ img {
   border: 3px solid;
 }
 
-a {
+#showMore {
   color: black;
   border: solid 1.5px black;
   border-radius: 30px;
   padding: 5px;
   text-decoration: none;
   max-width: 20%;
-
+  align-self: center;
 }
+
+
 a:hover {
   cursor: pointer;
 }
@@ -22,5 +28,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+}
+
+.cursive {
+  font-style: italic;
 }

@@ -29,3 +29,6 @@ app-magazine {
   width: 100%;
 }
 
+.cursive {
+  font-style: italic;
+}

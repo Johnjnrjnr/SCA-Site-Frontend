@@ -10,4 +10,5 @@ import {SiteNav} from './site-nav/site-nav';
 })
 export class App {
   protected readonly title = signal('sca-site');
+
 }

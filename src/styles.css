@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+.startup-splash{
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  z-index: 999999;
+  pointer-events: all; /* blocks interaction behind it */
+}
+
+.logo{
+  animation: spin 2000ms linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(120deg); } }
+
+.startup-splash--fade{
+  opacity: 0;
+  transition: opacity 250ms ease;
+}

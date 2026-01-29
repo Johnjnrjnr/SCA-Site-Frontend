@@ -8,6 +8,33 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div id="startup-splash" class="startup-splash">
+    <div class="startup-splash__content">
+      <img src="assets/Icons/Logo.jpeg" class="logo"/>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var SPLASH_MS = 2000;
+
+      function removeSplash() {
+        var el = document.getElementById('startup-splash');
+        if (!el) return;
+        el.classList.add('startup-splash--fade');
+        setTimeout(function () { el.remove(); }, 300);
+      }
+
+      // Always remove after 2s, no matter what
+      setTimeout(removeSplash, SPLASH_MS);
+
+      // Safety: if something weird happens, still remove when page is loaded
+      window.addEventListener('load', function () {
+        setTimeout(removeSplash, 1500);
+      });
+    })();
+  </script>
+
   <app-root></app-root>
 </body>
 </html>

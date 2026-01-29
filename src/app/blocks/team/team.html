@@ -1,0 +1,51 @@
+
+<div class="weatherTime">
+<div class="dayTimeDisplay"></div>
+  <div class="Weather">
+    <h1>BODENSEE</h1>
+    <div id="SunMoon">
+    @if(this.weather.responses().is_day){
+      <img src="assets/weather/Sonne.jpeg"/>
+    } @else {
+      <img src="assets/weather/Mond.jpeg"/>
+    }
+    </div>
+    <div id="timer">
+      <h1>{{this.hours}}:{{this.minutes >= 10 ? this.minutes : '0' + this.minutes}}.{{this.seconds >= 10 ? this.seconds : '0' + this.seconds}} (GMT +1)
+      </h1>
+    </div>
+  </div>
+
+<div class="splitter"></div>
+<div class="Links">
+  <table>
+    <tr>
+
+      <td>
+        <a class="bordered"><img src="assets/Icons/Pfeil.jpeg"/>TIKTOK</a>
+      </td>
+      <td class="right">
+        <a href="assets/AGBs%20sça.pdf" target="_blank">AGB</a>
+      </td>
+    </tr>
+    <tr>
+
+      <td>
+        <a class="bordered"><img src="assets/Icons/Pfeil.jpeg"/>YOUTUBE</a>
+      </td>
+      <td class="right">
+        KONTAKT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a class="bordered"><img src="assets/Icons/Pfeil.jpeg"/>INSTAGRAM</a>
+      </td>
+      <td class="right">
+        <a class="bordered"><img src="assets/Icons/Pfeil.jpeg"/> SARICICEKART@GMAIL.COM</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</div>
